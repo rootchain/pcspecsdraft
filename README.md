@@ -1,6 +1,6 @@
 ## IPFN Rootchain
 
-This document is a seed for [IPFN]() root chain.
+This document is a seed for [IPFN](https://github.com/ipfn) root chain.
 
 ## What is it?
 
@@ -8,7 +8,7 @@ Rootchain is a [Parity](https://www.parity.io) powered globally accessible block
 
 ## Functions
 
-Rootchain serves as global and secure identity provider and EVM execution platform with single globally available truth for the [IPFN]() public network.
+Rootchain serves as global and secure identity provider and EVM execution platform with single globally available truth for the [IPFN](https://github.com/ipfn) public network.
 
 ### Cryptocurrency
 
@@ -75,6 +75,6 @@ Because of this reason, most certainly it will change in the near future.
 
 Definition of a public blockchain in _cryptocurrency_ world would be that everyone can run a validating node.
 
-Currently the blockchain is operated by mechanism called Proof-of-Authority where authorities are independent members of rootchain organization and associates. It is in fact similar to [XRP]() or [IOTA]() situation but in this case it's considered incubator.
+Currently the blockchain is operated by mechanism called Proof-of-Authority where authorities are independent members of rootchain organization and associates. It is in fact similar to [XRP](https://ripple.com/xrp/) or [IOTA](https://www.iota.org) situation but in this case it's considered incubator.
 
 We stay committed and look forward to the day rootchain is completely public and validated outside of bounds of our organization.
