@@ -22,10 +22,6 @@ What is the purpose of another Ethereum blockchain and why not develop a new one
 
 The purpose of rootchain is not to develop a new blockchain software but a network.
 
-## Principles
-
-Before the distribution of tokens is over (not staking) there always exists a slight probability that private keys which hold genesis tokens are compromised, in this case we will most probably fork and rollback the blockchain. After the distribution is over and community operated validator nodes are in-place we can only advise and mining power or voting will decide, after the Proof-of-Stake is complete.
-
 ## Distribution
 
 Tokens will be distributed across the world to individuals which are able to confirm their unique identity using different mechanisms (twitter, sms, photo etc.).
