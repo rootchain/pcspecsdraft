@@ -10,11 +10,11 @@ Rootchain is a [Parity](https://www.parity.io) powered globally accessible block
 
 Rootchain serves as global and secure identity provider and EVM execution platform with single globally available truth for the [IPFN](https://github.com/ipfn) public network.
 
-### Cryptocurrency
+### IPFN Payments
 
-Value of a currency or the price of thereof is only that which people are willing to pay or give in exchange for it.
+There is no promise of the service which will be provided for the token itself which is out of our control; nevertheless it will be utilised in public IPFN network.
 
-There is no promise of the service which will be provided for the token itself which is out of our control.
+In the global scale IPFN network will build upon work of [Raiden Team](https://raiden.network/) and utilize payment channels on top of rootchain.
 
 ## Purpose
 
