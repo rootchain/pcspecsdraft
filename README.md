@@ -24,7 +24,7 @@ The purpose of rootchain is not to develop a new blockchain software but a netwo
 
 ## Distribution
 
-Tokens will be distributed across the world to individuals which are able to confirm their unique identity using different mechanisms (twitter, sms, photo etc.).
+Tokens will be distributed across the world to individuals which are able to confirm their unique identity using different mechanisms (github, twitter, sms, photo etc.).
 
 Part of the issued tokens will remain a part of rootchain fund which is used to fund IPFN projects development.
 
