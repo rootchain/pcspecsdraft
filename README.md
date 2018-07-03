@@ -7,11 +7,11 @@ It all starts with a genesis chain:
 ```json
 {
   "header": {
-    "timestamp": "2018-07-03T11:50:39.5274074+02:00",
-    "head_hash": "zHeadAt9FzMrUUmnGLwb4Qm7kbWKWahcDDUzy8KHiZAkiJGSQV43",
+    "timestamp": "2018-07-03T16:03:21.6967617+02:00",
+    "head_hash": "zHeadAt99NpDwXh1cMoDEcJqRRGgY8S6v7AQa1Q1rzVdypGVVCCx",
     "exec_hash": "zFuncm68xhwUYFJNPahHfgkYfxTenVuoVkHgW42Ruyrq43QGLWed",
-    "state_hash": "zStateMGz4wQocWbvHVqS1HcbzNzJB5JK3eAkzF9krbSLZiV8cNr",
-    "signed_hash": "zFSec2XVCnP9uzmgYaKYCjcgpWiM3jiwePmfrUxnUTKuG3Cpe1nm"
+    "state_hash": "zEsT8raaEjJUjS34XpEBVQknmN2oEjXL3Qu79WSTtpmbTLKiUvLP",
+    "signed_hash": "zFSec2XV2kCmfbmUQ5F7B6j9KJdVLKvJ18Wf2caNSSCqVgi3HmL7"
   },
   "exec_ops": [
     "OP_GENESIS",
@@ -22,8 +22,8 @@ It all starts with a genesis chain:
     "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bcecb7639e5cf7b7f7f750b1fc843829e31f38fc16e8fdd0a942df17150d240950a7be03ad0b9cf525c5971aefa06a64d69b876fe1febd72b397ea0fb482c738a ]"
   ],
   "signatures": [
-    "HCcfWWB1+Vc3/n3Bmr+EcBHKIe1iOqzJXg+rajC73GXbKdEtZVtGtoFiudqaE7Gxhpq1EfGmyNPH5ia62GP3XfQ=",
-    "GyyI1vumLAWSKCBgHji4WhTw9yzdRIz/470iuKwR0Dz9Wo317TV49KkNruI8NL9Ayj2Twjl+qOm+voQp18V3boI="
+    "G5Xg9SWOUMyyKUHeHkZcmK5sSstPt+VWt4RAJn5wJ+NJN5JaeXj0NOhPqUumMlRU5JpxaAlj9+PRyX9YlwP0g1s=",
+    "G0A1JgCI1afJjXbq152Rw6O8nHXyIMBc3T59lK+cvZUqZXWR8eBkDJdu0iG1e6BErX1e4NrspG9C4zcOl897IoU="
   ]
 }
 ```
