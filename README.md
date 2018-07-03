@@ -7,11 +7,10 @@ It all starts with a genesis chain:
 ```json
 {
   "header": {
-    "timestamp": "2018-07-03T09:03:43.7114081+02:00",
-    "head_hash": "zHeadAt9CLih5fYYNkWWfFGvKpZQBNft686e1sBArkg6hYpucJ74",
-    "exec_hash": "zFuncm68xVtqrQr1xeefxKKvEvKvbu3rLje4g6tECpoX62cftwbQ",
-    "state_hash": "zStateMGz4wQocWbvHVqS1HcbzNzJB5JK3eAkzF9krbSLZiV8cNr",
-    "signed_hash": "zFSec2XUzXbWHwP4zYpbEVhhBVaZaGAHNVz7ULotYzhzy4nX4qMJ"
+    "timestamp": "2018-07-03T11:02:39.2431625+02:00",
+    "head_hash": "zHeadAt93QZmSLU6T7YQ2NNJ43hHrTkvMZjW1PPxFYp6TUhwiRdw",
+    "exec_hash": "zFuncm698EzQ9mWLBg5TpztVnMF3k74Cc8LH4J5mGPPbzMBouFYS",
+    "signed_hash": "zFSec2XV6MQJHimA4ERRK6KTh2JgF8AuJUfyzB43pKG75kzPitDQ"
   },
   "exec_ops": [
     "OP_GENESIS",
@@ -21,13 +20,14 @@ It all starts with a genesis chain:
     "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bcecb7639e5cf7b7f7f750b1fc843829e31f38fc16e8fdd0a942df17150d240950a7be03ad0b9cf525c5971aefa06a64d69b876fe1febd72b397ea0fb482c738a ]"
   ],
   "signatures": [
-    "GyPkPgNaMalkUqI5iUAij/jOns+CUztVC3ViGXIWSvGpTDLYxOc2zpF5Jf90tD5lc5PXPq79N/Ol9dLUwnT7wBQ=",
-    "G2CelAazzlZfsFz0yUJbP9q8hWO/Ozd6dJgpO1CGT+VLHNu2Xg6fP9Hlrx7kd/aIQ0fh52dXciXNp3ztjxiGzug="
+    "HIwPObEgWPFu+MQmUTbQe/U+tqe/E55F5z/LdcBK5N36P9SEnduX/Ul6NMK0DMawqAUSnMM8FeGm3SDJJZKGl98=",
+    "G/MDoIyYEmkvEWgmdOWQnbYCef78pMPm2mzaT1olrTasIqtZqjx29WUXPCvME8vRZgzQ28MdnL1+74PVr+PUAtg="
   ]
 }
 ```
 
-Notice no `prev_hash` field, this indicates genesis chain and it allows to sign it with just delegated power.
+Only genesis chain allows empty `prev_hash` and `height` fields and signing with just yet delegated power.
+Creation of a chain should be always done on private channels.
 
 Genesis chain is a block generated on a blank sheet, a new chain can be created by anyone.
 
