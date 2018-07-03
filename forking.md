@@ -6,7 +6,7 @@ There are two distinct types of chains in the whole system.
 
 Chains described in this specification can never be forked.
 
-Once block is finalized it cannot be forked or otherwise whole chain is terminated.
+Once block is finalized it cannot be forked or otherwise whole chain is terminated at pre-fork height.
 
 Read more about implications of inforkability [below](#implications).
 
