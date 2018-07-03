@@ -1,76 +1,63 @@
-## IPFN Rootchain
+# Chain
 
-This document is a seed for [IPFN](https://github.com/ipfn) root chain.
+## Genesis
 
-## What is it?
+It all starts with a genesis chain:
 
-Rootchain is a [Parity](https://www.parity.io) powered globally accessible blockchain.
+```json
+{
+  "header": {
+    "timestamp": "2018-07-03T09:03:43.7114081+02:00",
+    "head_hash": "zHeadAt9CLih5fYYNkWWfFGvKpZQBNft686e1sBArkg6hYpucJ74",
+    "exec_hash": "zFuncm68xVtqrQr1xeefxKKvEvKvbu3rLje4g6tECpoX62cftwbQ",
+    "state_hash": "zStateMGz4wQocWbvHVqS1HcbzNzJB5JK3eAkzF9krbSLZiV8cNr",
+    "signed_hash": "zFSec2XUzXbWHwP4zYpbEVhhBVaZaGAHNVz7ULotYzhzy4nX4qMJ"
+  },
+  "exec_ops": [
+    "OP_GENESIS",
+    "OP_ASSIGN_POWER [ OP_UINT64 0 OP_UINT64 10000000 OP_PUBKEY 0x020e8b587eab8b5c9a57f3b6d540f01b2ce154a1c4cddad145234e83aad81282f8 ]",
+    "OP_ASSIGN_POWER [ OP_UINT64 1 OP_UINT64 10000000 OP_PUBKEY 0x025657544e1355ac629798c62b4a65b917e44ec7b445ee0af334dd5cb5802652ba ]",
+    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bf0d1ff1eaf18a82dd2c713bb02c66d833bc56e18ef1304f8ee616f96eb21c9cf4591b27bdd7ee40400558c7f5d81b922c2b24c79bacabbe12bbe536eac554efe ]",
+    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bcecb7639e5cf7b7f7f750b1fc843829e31f38fc16e8fdd0a942df17150d240950a7be03ad0b9cf525c5971aefa06a64d69b876fe1febd72b397ea0fb482c738a ]"
+  ],
+  "signatures": [
+    "GyPkPgNaMalkUqI5iUAij/jOns+CUztVC3ViGXIWSvGpTDLYxOc2zpF5Jf90tD5lc5PXPq79N/Ol9dLUwnT7wBQ=",
+    "G2CelAazzlZfsFz0yUJbP9q8hWO/Ozd6dJgpO1CGT+VLHNu2Xg6fP9Hlrx7kd/aIQ0fh52dXciXNp3ztjxiGzug="
+  ]
+}
+```
 
-## Functions
+Notice no `prev_hash` field, this indicates genesis chain and it allows to sign it with just delegated power.
 
-Rootchain serves as global and secure identity provider and EVM execution platform with single globally available truth for the [IPFN](https://github.com/ipfn) public network.
+Genesis chain is a block generated on a blank sheet, a new chain can be created by anyone.
 
-### IPFN Payments
+There is one main chain created by operator, coins are distributed and by that distributing signing power.
 
-There is no promise of the service which will be provided for the token itself which is out of our control; nevertheless it will be utilised in public IPFN network.
+## Power
 
-In the global scale IPFN network will build upon work of [Raiden Team](https://raiden.network/) and utilize payment channels on top of rootchain.
+Currency native to each chain is power which is signing power.
 
-## Purpose
+## Finalized blocks
 
-What is the purpose of another Ethereum blockchain and why not develop a new one?
+Chains have no value unless they are signed by over 51% of delegated signing power.
 
-The purpose of rootchain is not to develop a new blockchain software but a network.
+## Account
 
-## Distribution
+User account is a chain whose index can only increment and can never fork.
 
-Tokens will be distributed across the world to individuals which are able to confirm their unique identity using different mechanisms (github, twitter, sms, photo etc.).
+## Transactions
 
-Part of the issued tokens will remain a part of rootchain fund which is used to fund IPFN projects development.
+Transactions are first registered on sender chain and then can be optionally settled on main chain and claimed on receiver chain.
 
-Precise parameters of the distribution remain undefined until direct or indirect interest in the token itself is measured.
+## Off-chain transactions
 
-## Validating
+Chain channels are used to settle, reach consensus and prevent double spending on both on and off-chain transactions.
 
-Rootchain validators are currently all operated by rootchain organization members but we are looking for trusted parties to further decentralize the whole network.
+## Off-chain double spend protection
 
-We are anxiously awaiting the release of [Casper](https://arxiv.org/abs/1710.09437) to enable validating and generating tokens by all of the community.
+Protection of on-chain and off-chain transactions is 51% signing power consensus and inability to fork.
 
-## Roadmap
+When a signing power signs a chain which is finalized block it cannot sign further blocks other than that,
+when signing power is used to sign-off forked chain all participants of the network decide to close the (forked source) chain.
 
-There is no roadmap per se which would indicate that work needs to be done on our end to further advance the blockchain software, which is not true.
-
-Plans for this blockchain development include following:
-
-1. Deploy sharding after it's tested
-2. Deploy Casper Proof-of-Stake validating protocol as it's proven to operate without downtime
-3. Keep developing IPFN protocol and software
-
-## Details
-
-### Block time
-
-Time between blocks should be between 5 and 6 seconds, no more and certainly no less.
-
-### Mining fees
-
-Proof-of-Work is not required to mine a new block but every single block still creates 1 new token.
-
-Tokens created by validators that are operated by rootchain organization are partially transferred back to the rootchain fund and partially kept in hot-wallets serving as _bounties_.
-
-### Validator nodes
-
-Currently running a validator node is not possible if you are outside of rootchain organization. This will change soon after Casper is released and tested.
-
-### Transaction fees
-
-Currently there are zero transaction fees but we will forceed steps in order to protect our nodes and then entire blockchain from the possibility of spam attacks.
-Because of this reason, most certainly it will change in the near future.
-
-## Public blockchain
-
-Definition of a public blockchain in _cryptocurrency_ world would be that everyone can run a validating node.
-
-Currently the blockchain is operated by mechanism called Proof-of-Authority where authorities are independent members of rootchain organization and associates. It is in fact similar to [XRP](https://ripple.com/xrp/) or [IOTA](https://www.iota.org) situation but in this case it's considered incubator.
-
-We stay committed and look forward to the day rootchain is completely public and validated outside of bounds of our organization.
+Power delegated to public keys used to carry the attack is all lost.
