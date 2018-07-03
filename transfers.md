@@ -6,19 +6,19 @@ Transfer operations are registered on the spender chain first.
 {
   "header": {
     "index": 1,
-    "timestamp": "2018-07-03T17:15:42.795461+02:00",
-    "head_hash": "zHeadAt9843LAa4t4rdKyJZLaxCwGMRKuHYxQRV2a8Gh69rK1Dzh",
-    "prev_hash": "zHeadAt94YCArGcowMhreveVBWgiocFZinhoZgwGGs81pcDBM8af",
+    "timestamp": "2018-07-03T17:29:31.8769445+02:00",
+    "head_hash": "zHeadAt9Aw2tFedpg1yZT33ZhDVZ36mNvSTqXfMHF8jyYDN1f7MJ",
+    "prev_hash": "zHeadAt9DYAW7cTiwQuVzWG1uxxXeNG4B2q3eig3ZqRJqxyTqi4A",
     "exec_hash": "zFuncm68yqR6DAziE8VtxScRxLHije5iD32Bv5mdNtBtCBn3Zk4y",
-    "state_hash": "zEsT8raaFywo6yVoxXvujNtE3PNAHeij47ZCAN2vTQ9RRcshtFXz",
-    "signed_hash": "zFSec2XVGWJxNatYmTXKBTm1FKUekFSP77egno3QZLNsZDVMLCBZ"
+    "state_hash": "zEsT8raaH3kghsjUTTERsJD4j7B7gjgCFxAqJ5sWh6BmYuWZwBCE",
+    "signed_hash": "zFSec2XV3rRoGtZzzrGq65W8LEHvKZgH6AxrByK7dec4dWus98Dc"
   },
   "exec_ops": [
     "OP_SIGNED [ OP_TRANSFER [ OP_UINT64 1000000 OP_PUBKEY_ADDR zFNScYMH1wSYgj67jTxnvJ48XzQnHm5XJqxHuzvpG39e5WbVvL1u ] OP_SIGNATURE 0x1c2f90eecedf9b7a8a5318fe6f9e5acc5c5daa5bcd187aa9385a25fd98f0301f0a1f4863db05578d7562581777b3f9af097f94fe693913ab0365093a4dc9838983 ]"
   ],
   "signatures": [
-    "G2Ja290yLhDirXzIZyFRRIx/1kw2/BBtrEBcXYT7GUAkOwvZyNCy0kfEFb+JG6H/asM8JWvo+a99IDX7FT9W1y0=",
-    "G3SsytOFJcy+u4joNIuhvWWZbBYEk0mmg3oz2yILlXTZRItKke8I4dYprT1dEYSv8GlF+fsbLsE6FLnAIKxQbw4="
+    "HPNztWw3zUso8aZYOu57zju50On1mfPxnE9NwrKBrsJBCCB2bXzjzlI6tdX/lzzodagRFptNtfFCyvrlkIyk3fM=",
+    "G+WJq2eIWn8JPngnAEyXLyuZH+8w/r+1vlDJizd9uyzuDbAPOml5i8W5XdnQzXNxsPAEJ4ZpZcM87pt1d9dSp5s="
   ]
 }
 ```
@@ -43,19 +43,19 @@ Claim of a transfer is registered on receiver chain and optionally settled on a 
 {
   "header": {
     "index": 2,
-    "timestamp": "2018-07-03T17:26:38.2385927+02:00",
-    "head_hash": "zHeadAt8yeztQLd9aCT7m4QRZn5fidSgdU54UDsK56JPL665p2eE",
-    "prev_hash": "zHeadAt968434JgLYtcvNhNak6YzWiBVxiaYgDKJWxXvidgVT1iV",
-    "exec_hash": "zFuncm6927JHsNTJermLQz39uEDKEzkebGWDukiwgdXRWBitbbrF",
-    "state_hash": "zEsT8raaHXmgPE7E9e7LfS2fuqhg4QrveKpeUKbzEQ1b8v4eBdP5",
-    "signed_hash": "zFSec2XVAYhuXdLCLLbc8tyVpHqzvQdCUpCkbzKxSzjXMbMKxs5n"
+    "timestamp": "2018-07-03T17:29:31.8819408+02:00",
+    "head_hash": "zHeadAt93nxXAJSPVmeVNsWhZcHBpzR52TeWfdERJ6DrQZ1Kg5eE",
+    "prev_hash": "zHeadAt9Aw2tFedpg1yZT33ZhDVZ36mNvSTqXfMHF8jyYDN1f7MJ",
+    "exec_hash": "zFuncm692CRs4oLWCFzjCwMJr7zqqKrtqouoFaeLaHVDC886RMep",
+    "state_hash": "zEsT8raaGxV3V2d5cE5UN5JxjYjpsNQNcT7kakSy9xGGTRpsvfq4",
+    "signed_hash": "zFSec2XV3ePyjwCEF4qMMH91BnuVJyeHrL6mfRZUNU7up9bnECdu"
   },
   "exec_ops": [
-    "OP_SIGNED [ OP_CLAIM [ OP_CID zFSec2XVBPZzaJXYgRqyJwn5KHDr3mDX5tkodHDohekwicWnyKRU OP_ID 0 ] OP_SIGNATURE 0x1bdeee9b3df4d7361d4e3fdbe303fc86b1af42b35e446b44291e46fed712f7983f35def1f4db852212e1ce9057fd4663fa8a8a9f0e0e568fd9e87ae557d91728c2 ]"
+    "OP_SIGNED [ OP_CLAIM [ OP_CID zFSec2XV4v7WY2h3Wz3SpQFMrFquKNsLpwNqE3apM8u8V5J7Q8jw OP_ID 0 ] OP_SIGNATURE 0x1c9e875652afe77dd7e7f11dda1ab653e5a97a95b58abc4135ad8a9d6e1a4dcad464fcf06e36f1a761000b686c2dcc05dbe41a73907a09350a483262a9dcd5cb25 ]"
   ],
   "signatures": [
-    "GzSYYSu5BDIFHBa1EuYlA/QMD788IIt2HviBn240nJ0POv/Nf2GvGEn74k3FYZprDxM6qkjFU+unDFSZoVcyB6o=",
-    "G8jj5KMddkjkHhzCw2x+wxwnD6DVFT/xc46M/iSEeOioOcQQfGEcejtp/6b7YxBUktiSYxP7FGl70nXzj5VXPvw="
+    "G5x3q9lBD0g2wA1G+FSe/OqC0q3Xb3Ufb0fncWwCME1/Kqx2QK6zXpZOpyR9AjzwIGnanUauYW3tZ4uJVBb4cZQ=",
+    "HIu1ou8DRXxoh+RPYjwd6XMUL99ehFfWXLEUogmewRzBfCr9vXMHPvMf2mHsvKPWeoqZPREsx35Gxk6looa2Sjk="
   ]
 }
 ```
