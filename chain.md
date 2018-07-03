@@ -47,6 +47,5 @@ Chain is not sealed until at least 51% of **all signers** produce a block in the
 
 ## Blocks
 
-Main restriction for blocks is that they cannot be produced with zero operations.
+Blocks with higher `height` have to always have higher `timestamp` and can never contain zero operations.
 
-Blocks with higher `height` have to always have higher `timestamp` as well.
