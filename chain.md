@@ -1,11 +1,8 @@
 # Chain
 
+**WIP**
 
-## Blocks
-
-Main restriction for blocks is that they cannot be produced with zero operations.
-
-Blocks with higher `height` have to always have higher `timestamp` as well.
+Chain cannot have less than **42%** of entire power delegated to signing.
 
 ## Genesis
 
@@ -47,3 +44,9 @@ There is one main chain created by operator, coins are distributed and by that d
 ## Sealing
 
 Chain is not sealed until at least 51% of **all signers** produce a block in their own chain with **witness** operation in it.
+
+## Blocks
+
+Main restriction for blocks is that they cannot be produced with zero operations.
+
+Blocks with higher `height` have to always have higher `timestamp` as well.
