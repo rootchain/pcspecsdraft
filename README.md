@@ -49,6 +49,10 @@ User account is a chain whose index can only increment and can never fork.
 
 Transactions are first registered on sender chain and then can be optionally settled on main chain and claimed on receiver chain.
 
+## Transaction validation
+
+Transactions are validated by mechanism similar to UTXO thanks to which we can settle transactions without validating entire user blockchains.
+
 ## Off-chain transactions
 
 Chain channels are used to settle, reach consensus and prevent double spending on both on and off-chain transactions.
