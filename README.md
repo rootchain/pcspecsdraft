@@ -9,6 +9,7 @@ IPFN Rootchain – Interplanetary Functions Blockchain Project.
 - [Work In Progress](#work-in-progress)
 - [Specs](#specs)
   - [Chain](chain.md)
+  - [Channels](channels.md)
   - [Forkability](forks.md)
   - [Transfers](transfers.md)
   - [Voting](voting.md)
