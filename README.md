@@ -28,7 +28,7 @@ It all starts with a genesis chain:
 }
 ```
 
-Above example is genesis of 2/3 multisig chain.
+Above example is genesis of 2/3 multisig chain which delegates power to itself.
 
 Only genesis chain allows empty `prev_hash` and `height` fields and signing with just yet delegated power.
 Creation of a chain should be always done on private channels.
