@@ -39,6 +39,27 @@ If not claimed after certain time period it can be claimed back.
 
 Claim of a transfer is registered on receiver chain and optionally settled on a main chain.
 
+```json
+{
+  "header": {
+    "index": 2,
+    "timestamp": "2018-07-03T17:26:38.2385927+02:00",
+    "head_hash": "zHeadAt8yeztQLd9aCT7m4QRZn5fidSgdU54UDsK56JPL665p2eE",
+    "prev_hash": "zHeadAt968434JgLYtcvNhNak6YzWiBVxiaYgDKJWxXvidgVT1iV",
+    "exec_hash": "zFuncm6927JHsNTJermLQz39uEDKEzkebGWDukiwgdXRWBitbbrF",
+    "state_hash": "zEsT8raaHXmgPE7E9e7LfS2fuqhg4QrveKpeUKbzEQ1b8v4eBdP5",
+    "signed_hash": "zFSec2XVAYhuXdLCLLbc8tyVpHqzvQdCUpCkbzKxSzjXMbMKxs5n"
+  },
+  "exec_ops": [
+    "OP_SIGNED [ OP_CLAIM [ OP_CID zFSec2XVBPZzaJXYgRqyJwn5KHDr3mDX5tkodHDohekwicWnyKRU OP_ID 0 ] OP_SIGNATURE 0x1bdeee9b3df4d7361d4e3fdbe303fc86b1af42b35e446b44291e46fed712f7983f35def1f4db852212e1ce9057fd4663fa8a8a9f0e0e568fd9e87ae557d91728c2 ]"
+  ],
+  "signatures": [
+    "GzSYYSu5BDIFHBa1EuYlA/QMD788IIt2HviBn240nJ0POv/Nf2GvGEn74k3FYZprDxM6qkjFU+unDFSZoVcyB6o=",
+    "G8jj5KMddkjkHhzCw2x+wxwnD6DVFT/xc46M/iSEeOioOcQQfGEcejtp/6b7YxBUktiSYxP7FGl70nXzj5VXPvw="
+  ]
+}
+```
+
 Transaction should be also be finalized on the spender chain.
 
 Double-claiming it cross-chain will result in transaction invalidation.
