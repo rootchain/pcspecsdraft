@@ -1,6 +1,6 @@
 # Transfers
 
-Transfer operations are registered on the spender chain first.
+Transactions are first registered on sender chain and claimed on receiver chain and then can be optionally settled on main chain.
 
 ```json
 {
@@ -60,6 +60,23 @@ Claim of a transfer is registered on receiver chain and optionally settled on a 
 }
 ```
 
-Transaction should be also be finalized on the spender chain.
+## Off-chain transactions
 
-Double-claiming it cross-chain will result in transaction invalidation.
+Chain channels are used to settle and reach consensus to prevent double spending on both on and off-chain transactions.
+
+Double-claiming it cross-chain will result in transaction invalidation as long as the block producers have access to chain channels.
+
+So called selfish mining would result in chain being uncommon in chain channel and by that invalidated, all other funds remaining on the chain would be lost.
+
+## Transaction validation
+
+Transactions are validated by mechanism similar to UTXO thanks to which we can settle transactions without validating entire user blockchains.
+
+## Double spend protection
+
+Protection of on-chain and off-chain transactions is 51% signing power consensus and inability to fork.
+
+When a signing power signs a chain which is finalized block it cannot sign further blocks other than that,
+when signing power is used to sign-off forked chain all participants of the network decide to close the (forked source) chain.
+
+Power delegated to public keys used to carry the attack is all lost.
