@@ -11,28 +11,28 @@ It all starts with a genesis chain, each account starts with a chain like follow
 ```json
 {
   "header": {
-    "timestamp": "2018-07-03T16:03:21.6967617+02:00",
-    "head_hash": "zHeadAt99NpDwXh1cMoDEcJqRRGgY8S6v7AQa1Q1rzVdypGVVCCx",
-    "exec_hash": "zFuncm68xhwUYFJNPahHfgkYfxTenVuoVkHgW42Ruyrq43QGLWed",
-    "state_hash": "zEsT8raaEjJUjS34XpEBVQknmN2oEjXL3Qu79WSTtpmbTLKiUvLP",
-    "signed_hash": "zFSec2XV2kCmfbmUQ5F7B6j9KJdVLKvJ18Wf2caNSSCqVgi3HmL7"
+    "timestamp": "2018-07-10T19:07:53.2727726+02:00",
+    "head_hash": "zHeadAt96Dkyhp32wJYjzv4NHm6jqSBKzVEPBK2pBVmQnvNgYuRx",
+    "exec_hash": "zFuncm692Z5CvNpTUv5pLz8tjw1Tp4HeRWH6ptxvRBZCtGAn54oA",
+    "state_hash": "z45oqTS8HpwMPrbFWZUomZGtdan4oWSqnTarsN7aH442oXJdafj",
+    "signed_hash": "zFSec2XVDESfaxnZb3qjfwxGkH5fUZRChfCAr1WYHUfea9RJ1fGs"
   },
   "exec_ops": [
-    "OP_GENESIS",
-    "OP_ASSIGN_POWER [ OP_UINT64 0 OP_UINT64 10000000 OP_PUBKEY 0x020e8b587eab8b5c9a57f3b6d540f01b2ce154a1c4cddad145234e83aad81282f8 ]",
-    "OP_ASSIGN_POWER [ OP_UINT64 1 OP_UINT64 10000000 OP_PUBKEY 0x025657544e1355ac629798c62b4a65b917e44ec7b445ee0af334dd5cb5802652ba ]",
-    "OP_ASSIGN_POWER [ OP_UINT64 2 OP_UINT64 10000000 OP_PUBKEY 0x03ff24488ea4d80627cbf3ff2a6c391a9855a609e3aa3c5e30c501df6fe7075177 ]",
-    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bf0d1ff1eaf18a82dd2c713bb02c66d833bc56e18ef1304f8ee616f96eb21c9cf4591b27bdd7ee40400558c7f5d81b922c2b24c79bacabbe12bbe536eac554efe ]",
-    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 10000000 ] OP_SIGNATURE 0x1bcecb7639e5cf7b7f7f750b1fc843829e31f38fc16e8fdd0a942df17150d240950a7be03ad0b9cf525c5971aefa06a64d69b876fe1febd72b397ea0fb482c738a ]"
+    "OP_ASSIGN_POWER [ OP_UINT64 1000000 OP_CID zFNScYMHAiBJPJcT9ri2cNwKTJfitbRcE2PSfMKQj272C6A5Fs25 ]",
+    "OP_ASSIGN_POWER [ OP_UINT64 1000000 OP_CID zFNScYMH8j9JuHxLR5KLsNP528LuLBi7ToCrh9tmdLb85pWno5Bg ]",
+    "OP_ASSIGN_POWER [ OP_UINT64 1000000 OP_CID zFNScYMH9HiRhyWx8nhwLmo4UfxegoSUTE7nQ17Lji2hzDVJnszf ]",
+    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 1000000 ] OP_SIGNATURE 0x1b79b046893a70d76d8b228deb2b1da4eec5253f89c87d37fc805b47b1182616aa0675407332d7b4179ec633bc4ea0747d8ddf42f93ae891e292602861a3be4332 ]",
+    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 1000000 ] OP_SIGNATURE 0x1c079e6a5c5a0c832759008df68b521a7e9451239dcb16af3f0e265fa59230df897b1d98f7254b8f35c80828cccb81089ad2b38b5e2c0134102e401c80e24683cc ]",
+    "OP_SIGNED [ OP_DELEGATE_POWER [ OP_UINT64 1000000 ] OP_SIGNATURE 0x1cc03322f986677b8f5b689d7daa711be604291704c747570e690cb2484588809b4250c39ae0cc7dba7562b440fd3afe0eadd281c4552d8748dec662295e855414 ]"
   ],
   "signatures": [
-    "G5Xg9SWOUMyyKUHeHkZcmK5sSstPt+VWt4RAJn5wJ+NJN5JaeXj0NOhPqUumMlRU5JpxaAlj9+PRyX9YlwP0g1s=",
-    "G0A1JgCI1afJjXbq152Rw6O8nHXyIMBc3T59lK+cvZUqZXWR8eBkDJdu0iG1e6BErX1e4NrspG9C4zcOl897IoU="
+    "HPTR7L5Sw3O23EDVA+K4CB6idJxlSVAMgAhi7LNEKpo0Q/1iixp8h8eCUePlhdaIG6eN2k5T+JH+WoZ+js7iQF4=",
+    "G05B5EkFy578f4UeJPe/dyxooE8pKlByw4xhtU0kiNU/YtZCq69c1Y/C3J6nh2wSf7F/wPLtkOdmXwgL5/vzhiM="
   ]
 }
 ```
 
-Example of 2/3 multisig chain genesis. Keys delegate power to themselves.
+Example of genesis chain with power delegated to three signers which of at least 51% need to sign a block.
 
 Genesis chain has always empty `prev_hash` and zero `height` and can be signed with just yet to be delegated power.
 
@@ -48,4 +48,3 @@ Chain is not sealed until at least 51% of **all signers** produce a block in the
 ## Blocks
 
 Blocks with higher `height` have to always have higher `timestamp` and can never contain zero operations.
-
