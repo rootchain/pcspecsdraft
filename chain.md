@@ -34,9 +34,7 @@ It all starts with a genesis chain, each account starts with a chain like follow
 
 Example of genesis chain with power delegated to three signers which of at least 51% need to sign a block.
 
-Genesis chain has always empty `prev_hash` and zero `height` and can be signed with just yet to be delegated power.
-
-Genesis chain is a block generated on a blank sheet, a new chain can be created by anyone.
+Genesis chain is a block generated on a blank sheet and has always empty `prev_hash` and zero `height`, a new chain can be created by anyone and signed with just yet to be delegated power.
 Creation of a chain should be always done on private channels and should always utilize multisig capability of the chain.
 
 There is one main chain created by operator, coins are distributed and by that distributing signing power.
